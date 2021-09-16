@@ -1,0 +1,33 @@
+@use '../themes/defaultTheme' as *;
+@use '../util/variables' as *;
+@use '../util/mixins' as *;
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0.5rem 11rem;
+    margin: 0 auto;
+    .results-info {
+        width: 90%;
+        height: 95%;
+        border: 1px solid black;
+        border-radius: $radius;
+        background-color: rgba($color: rgb(255, 255, 255), $alpha: 0.5);
+        padding: 0.5rem 0.5rem;
+        h3 {
+          color: black;
+          font-size: 1.1rem;
+        }
+        a {
+          text-decoration: none;
+          color: $primary-1;
+        }
+        p {
+          color: $grey-2;
+        }
+        .remove {
+          color: $red-light;
+        }
+      }
+}
+

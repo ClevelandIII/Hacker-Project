@@ -1,0 +1,8 @@
+@use '../themes/defaultTheme' as *;
+@use '../util/variables' as *;
+@use '../util/mixins' as *;
+
+.home{
+    display: flex;
+    border: 1px solid black;
+}

@@ -1,0 +1,19 @@
+@use '../themes/defaultTheme' as *;
+@use '../util/variables' as *;
+@use '../util/mixins' as *;
+
+.page{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    .not{
+        color: $grey-5;
+        cursor: text;
+        width: 100%;
+    }
+    .btn{
+        width: 100%;
+        
+    }
+}

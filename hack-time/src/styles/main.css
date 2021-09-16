@@ -317,74 +317,9 @@ h4 {
     line-height: 1;
   }
 }
-.single-movie {
-  width: 90vw;
-  max-width: 1170px;
-  min-height: 100vh;
-  display: grid;
-  align-items: center;
-  margin: 0 auto;
-  gap: 2rem;
-  grid-template-columns: 1fr 2fr;
-}
-.single-movie img {
-  width: 350px;
-  margin: 0 auto;
-  display: block;
-}
-.single-movie p {
-  font-size: 1.2rem;
-  margin-top: 1.5rem;
-  line-height: 1.8;
-}
-.single-movie .btn {
-  text-transform: capitalize;
-  padding: 0.25rem 0.5rem;
-  background: #d65c85;
-  color: #fff;
-  border-radius: 0.25rem;
-  display: inline-block;
-  margin-top: 0.5rem;
-  letter-spacing: 0.1rem;
-}
-
-.movies {
-  width: 80vw;
-  max-width: 1600px;
-  display: grid;
-  gap: 2rem;
-  padding: 3rem 0 5rem 0;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-}
-.movies .movie {
-  margin: 0 auto;
-  overflow: hidden;
-  position: relative;
-}
-.movies .movie:hover .movie-info {
-  transform: translateY(0);
-}
-.movies .movie img {
-  width: auto;
-  height: 400px;
-  max-width: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  display: block;
-}
-.movies .movie-info {
-  background: rgba(0, 0, 0, 0.3);
-  padding: 0.5rem 1rem;
-  color: #fff;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  transform: translateY(100%);
-  transition: all 0.5s linear;
-}
-.movies .movie-info p {
-  color: #fff;
+.home {
+  display: flex;
+  border: 1px solid black;
 }
 
 .search-form {
@@ -413,4 +348,48 @@ h4 {
   letter-spacing: 0.1rem;
   font-weight: 500;
   font-size: 1.25rem;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0.5rem 11rem;
+  margin: 0 auto;
+}
+section .results-info {
+  width: 90%;
+  height: 95%;
+  border: 1px solid black;
+  border-radius: 0.25rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0.5rem 0.5rem;
+}
+section .results-info h3 {
+  color: black;
+  font-size: 1.1rem;
+}
+section .results-info a {
+  text-decoration: none;
+  color: #761e3b;
+}
+section .results-info p {
+  color: #555e68;
+}
+section .results-info .remove {
+  color: #e37272;
+}
+
+.page {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+}
+.page .not {
+  color: #8f99a3;
+  cursor: text;
+  width: 100%;
+}
+.page .btn {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */

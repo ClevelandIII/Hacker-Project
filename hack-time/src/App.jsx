@@ -1,9 +1,15 @@
-import React, { useState, useEffect } from 'react'
+import { Switch, Route } from "react-router-dom"
+import Home from "./Pages/Home";
+// import SingleMovie from "./Pages/SingleMovie"
+import './styles/main.css'
 
 function App() {
   return (
-    <div className="App">
-    </div>
+    <Switch>
+      <Route exact path="/">
+        <Home />
+      </Route>
+    </Switch>
   );
 }
 
