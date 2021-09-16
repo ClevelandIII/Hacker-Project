@@ -12,7 +12,7 @@ const Results = () => {
   // const [hit, setHit] = useState(hits)
 
   if (loading) {
-    return <div className="loading"></div>;
+    return <div className="loading">Loading...</div>;
   }
 
   return (
@@ -31,11 +31,10 @@ const Results = () => {
           <div className="results-info" key={id}>
             <h3 className="title">{title}</h3>
             <a href={url} target="_blank" rel="noopener noreferrer">
-              Link To Article
+              Read More
             </a>
-            <p>{author}</p>
             <p>
-              {points}, {comment}
+              {points} points | {comment} comments | Made by {author}
             </p>
             <button className="remove" onClick={() => remove(id)}>
               Remove
@@ -45,8 +44,6 @@ const Results = () => {
       })}
     </section>
   );
-
-  return <div></div>;
 };
 
 export default Results;

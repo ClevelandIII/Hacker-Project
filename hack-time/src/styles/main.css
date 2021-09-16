@@ -257,7 +257,6 @@ h4 {
   letter-spacing: 0.1rem;
   text-transform: capitalize;
   line-height: 1.25;
-  margin-bottom: 0.75rem;
 }
 
 h1 {
@@ -277,7 +276,6 @@ h4 {
 }
 
 p {
-  margin-bottom: 1.25rem;
   color: #788591;
 }
 
@@ -359,7 +357,7 @@ section {
 section .results-info {
   width: 90%;
   height: 95%;
-  border: 1px solid black;
+  border: 1px solid #761e3b;
   border-radius: 0.25rem;
   background-color: rgba(255, 255, 255, 0.5);
   padding: 0.5rem 0.5rem;
@@ -377,6 +375,15 @@ section .results-info p {
 }
 section .results-info .remove {
   color: #e37272;
+  transition: all 0.5s linear;
+}
+section .results-info .remove:hover {
+  transform: all 0.5;
+  color: #c02626;
+}
+
+.loading {
+  font-size: 2rem;
 }
 
 .page {

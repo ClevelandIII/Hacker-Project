@@ -10,7 +10,7 @@ section{
     .results-info {
         width: 90%;
         height: 95%;
-        border: 1px solid black;
+        border: 1px solid $primary-1;
         border-radius: $radius;
         background-color: rgba($color: rgb(255, 255, 255), $alpha: 0.5);
         padding: 0.5rem 0.5rem;
@@ -27,7 +27,16 @@ section{
         }
         .remove {
           color: $red-light;
+          transition: $transition;
+          &:hover{
+            transform: all 0.5;
+            color: $red-dark;
+          }
         }
       }
+}
+
+.loading{
+  font-size: 2rem;
 }
 
