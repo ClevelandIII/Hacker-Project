@@ -1,6 +1,11 @@
 import React, { useReducer, useContext, useEffect, useState } from "react";
 import { reducer } from "./reducer";
 const API_ENDPOINT = "https://hn.algolia.com/api/v1/search?";
+// const ANIME_ENDPOINT = 'https://api.jikan.moe/v3/search/anime?q=Fate/Zero&page=1'
+// const MANGA_ENDPOINT = 'https://api.jikan.moe/v3/search/manga?q=full&page=1'
+// const V_ACTOR_ENDPOINT = 'https://api.jikan.moe/v3/search/people?q=Smith&limit=20'
+// const A_CHARACTER_ENDPOINT = 'https://api.jikan.moe/v3/search/character?q=Tanjiro&limit=20'
+// const PROFILE_ENDPOINT = 'https://api.jikan.moe/v3/user/nekomata1037/profile'
 
 const initialState = {
   loading: true,
@@ -45,7 +50,7 @@ export const AppProvider = ({ children }) => {
   };
 
   useEffect(() => {
-    fetchStories(`${API_ENDPOINT}query=${query}&page=${state.page}`);
+    fetchStories(`${API_ENDPOINT}query=${query}&page=${state.page}&limit=20`);
   }, [query, state.page]);
 
   return (
